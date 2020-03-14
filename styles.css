@@ -1,20 +1,20 @@
 body {
-    animation: gradient 10s infinite;
-    background: rgb(2,0,36);
+    animation: gradient 20s infinite;
+    background: #054f77;
     color: #141c3a;
   }
   
   @keyframes gradient {
     0% {
-        background: var(--light);
+        background: #054f77;
     }
     33%{
-        background: var(--info);
+        background: #4169e1;
     }
       66% {
-  background: var(--primary);
+        background: #000fff;
       }
       100% {
-          background: var(--light);
+          background: #054f77;
       }
   }
