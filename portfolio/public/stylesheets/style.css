@@ -1,9 +1,4 @@
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
   animation: gradient 10s infinite;
   background: rgb(2,0,36);
   color: #141c3a;
