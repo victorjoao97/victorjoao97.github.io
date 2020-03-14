@@ -5,11 +5,4 @@
   "repository": "https://github.com/victorjoao97/victorjoao97.github.io.git",
   "author": "Joao Victor Nascimento <victorjoao97@outlook.com>",
   "license": "MIT",
-  "dependencies": {
-    "bootstrap": "^4.4.1"
-  },
-  "devDependencies": {
-    "express-generator": "^4.16.1",
-    "nodemon": "^2.0.2"
-  }
 }
