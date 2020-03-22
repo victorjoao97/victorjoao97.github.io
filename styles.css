@@ -1,7 +1,11 @@
+:root {
+  --tema: #141c3a;
+}
+
 body {
     animation: gradient 20s infinite;
     background: #054f77;
-    color: #141c3a;
+    color: var(--tema);
   }
   
   @keyframes gradient {
@@ -18,3 +22,10 @@ body {
           background: #054f77;
       }
   }
+#heroku .work, #github .work {
+  transition: transform .5s;
+}
+
+#heroku .work:hover, #github .work:hover {
+  transform: translateY(-10px);
+}
