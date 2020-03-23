@@ -40,5 +40,5 @@ body {
   z-index: 1;
 }
 .bg {
-  background: url(./bg.jpg) center center / cover no-repeat;
+  background: url(./bg-min.jpg) center center / cover no-repeat;
 }
