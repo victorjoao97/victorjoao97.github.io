@@ -29,3 +29,16 @@ body {
 #heroku .work:hover, #github .work:hover {
   transform: translateY(-10px);
 }
+.bg::before {
+  content: "";
+  background: #000000bf;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+.bg {
+  background: url(./bg.jpg) center center / cover no-repeat;
+}
