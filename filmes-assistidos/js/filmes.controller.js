@@ -4,7 +4,9 @@ angular
     $scope.titulo = "Filmes que já assisti";
     $scope.titulos = [];
     $scope.filmes = JSON.parse(window.localStorage.getItem("filmes")) || [];
-
+    if (!JSON.parse(window.localStorage.getItem("filmes"))) {
+      window.localStorage.setItem("filmes", "[]");
+    }
     $scope.novoFilme = {};
 
     $scope.removerFilme = function(id) {
