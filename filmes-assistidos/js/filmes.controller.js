@@ -31,7 +31,7 @@ angular
         novoFilme: { titulo }
       } = $scope;
       $http
-        .get("http://www.omdbapi.com/?apikey=22156ae7", {
+        .get("https://www.omdbapi.com/?apikey=22156ae7", {
           params: { s: titulo }
         })
         .then(
@@ -48,7 +48,7 @@ angular
         novoFilme: { titulo }
       } = $scope;
       $http
-        .get("http://www.omdbapi.com/?apikey=22156ae7", {
+        .get("https://www.omdbapi.com/?apikey=22156ae7", {
           params: { t: titulo }
         })
         .then(
