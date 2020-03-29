@@ -3,7 +3,7 @@ angular
   .controller("FilmesController", function($scope, $http) {
     $scope.titulo = "Filmes que já assisti";
     $scope.titulos = [];
-    $scope.filmes = JSON.parse(window.localStorage.getItem("filmes"));
+    $scope.filmes = JSON.parse(window.localStorage.getItem("filmes")) || [];
 
     $scope.novoFilme = {};
 
