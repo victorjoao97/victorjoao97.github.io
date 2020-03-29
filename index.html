@@ -197,16 +197,16 @@
 
                         icon = iconLanguage(elm.tech)
 
-                        const div = $("<div></div>").addClass("col-sm-6 col-md-3")
+                        const div = $("<div></div>").addClass("col-sm-6")
                         // const img = $("<img>").attr("src", `https://via.placeholder.com/150?text=${elm.name}`)
                         //     .addClass("img-fluid rounded-circle")
                         const img = icon.length < 20 ? $("<i></i>").addClass(`${icon} fa-5x`) : $(icon)
-                        const link = $("<h2></h2>").append($("<a></a>").addClass("btn btn-outline-primary text-capitalize").text(elm.name)
+                        const link = $("<h2></h2>").append($("<a></a>").addClass("btn btn-link text-capitalize").text(elm.name)
                             .attr("href", elm.web_url).attr("target", "_blank").attr("rel", "nofollow"))
                         const tech = $("<p></p>").addClass("pt-3 mb-0").append($("<span></span>").addClass("badge badge-info").text(elm.tech), $("<span></span>").addClass("badge badge-primary ml-1").text(elm.created_at))
                         const divApp = $("<div></div>")
-                            .addClass("work rounded py-3")
-                            .append(img, tech, link)
+                            .addClass("work rounded py-3 d-flex justify-content-around")
+                            .append(img, $("<div></div>").append(tech, link))
 
                         div.append(divApp)
                         heroku.find(".row").append(div)
